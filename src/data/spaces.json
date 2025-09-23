@@ -61,5 +61,320 @@
     ],
     "hours": "10:00 AM - 7:00 PM",
     "time_slots": ["Morning Session (10am-2pm)", "Afternoon Session (2pm-6pm)"]
+  },
+  {
+    "id": 4,
+    "name": "Manila Minds Cafe",
+    "location": "Manila City",
+    "price": 280,
+    "main_image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+    "images": [
+      "https://images.unsplash.com/photo-1529676468690-787ec1f6dabb",
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
+    ],
+    "description": "A cozy cafe-style workspace where students and freelancers can enjoy unlimited coffee while working.",
+    "amenities": [
+      "Unlimited Coffee",
+      "Fast Wi-Fi",
+      "Charging Stations",
+      "Snack Bar",
+      "Air-conditioning"
+    ],
+    "hours": "8:00 AM - 10:00 PM",
+    "time_slots": ["8am - 12pm", "12pm - 4pm", "4pm - 8pm"]
+  },
+  {
+    "id": 5,
+    "name": "Davao Work Loft",
+    "location": "Davao City",
+    "price": 350,
+    "main_image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    "images": [
+      "https://images.unsplash.com/photo-1522205408450-add114ad53fe",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+    ],
+    "description": "A sleek and modern loft space with flexible workstations and private meeting rooms.",
+    "amenities": [
+      "Private Cabins",
+      "Fiber Internet",
+      "24/7 Security",
+      "Air-conditioned",
+      "Pantry Access"
+    ],
+    "hours": "7:00 AM - 11:00 PM",
+    "time_slots": ["Morning (7am-11am)", "Afternoon (11am-3pm)", "Evening (3pm-7pm)"]
+  },
+  {
+    "id": 6,
+    "name": "Baguio Study Lodge",
+    "location": "Baguio City",
+    "price": 200,
+    "main_image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0",
+    "images": [
+      "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634",
+      "https://images.unsplash.com/photo-1504386106331-3e4e71712b38"
+    ],
+    "description": "Nestled in the cool climate of Baguio, this lodge offers a serene environment perfect for studying.",
+    "amenities": [
+      "Heated Lounge",
+      "High-speed Wi-Fi",
+      "Quiet Pods",
+      "Power Outlets",
+      "Hot Drinks"
+    ],
+    "hours": "9:00 AM - 8:00 PM",
+    "time_slots": ["Morning Pass", "Afternoon Pass", "Full Day Pass"]
+  },
+  {
+    "id": 7,
+    "name": "Iloilo ThinkTank",
+    "location": "Iloilo City",
+    "price": 320,
+    "main_image": "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    "images": [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+    ],
+    "description": "A dynamic co-working space with brainstorming zones and creative corners.",
+    "amenities": [
+      "Brainstorm Rooms",
+      "High-speed Wi-Fi",
+      "Ergonomic Chairs",
+      "Library Corner",
+      "Free Coffee"
+    ],
+    "hours": "8:00 AM - 9:00 PM",
+    "time_slots": ["Morning (8am-12pm)", "Afternoon (12pm-4pm)", "Evening (4pm-9pm)"]
+  },
+  {
+    "id": 8,
+    "name": "Ortigas Work Lounge",
+    "location": "Ortigas Center",
+    "price": 400,
+    "main_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "images": [
+      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+      "https://images.unsplash.com/photo-1504386106331-3e4e71712b38"
+    ],
+    "description": "Strategically located in Ortigas, this lounge offers a premium workspace for professionals.",
+    "amenities": [
+      "Meeting Rooms",
+      "24/7 Access",
+      "Strong Wi-Fi",
+      "Pantry & Snacks",
+      "Air-conditioning"
+    ],
+    "hours": "Open 24/7",
+    "time_slots": ["Day Pass", "Night Pass", "Full Day Access"]
+  },
+  {
+    "id": 9,
+    "name": "Laguna Learning Hub",
+    "location": "Santa Rosa, Laguna",
+    "price": 220,
+    "main_image": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+    "images": [
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    ],
+    "description": "An affordable student-friendly hub with long tables and group study rooms.",
+    "amenities": [
+      "Group Study Rooms",
+      "Affordable Meals",
+      "Wi-Fi",
+      "Quiet Zone",
+      "Printing Services"
+    ],
+    "hours": "7:00 AM - 10:00 PM",
+    "time_slots": ["7am - 11am", "11am - 3pm", "3pm - 7pm"]
+  },
+  {
+    "id": 10,
+    "name": "Cavite Focus Space",
+    "location": "Dasmariñas, Cavite",
+    "price": 260,
+    "main_image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "images": [
+      "https://images.unsplash.com/photo-1522205408450-add114ad53fe",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+    ],
+    "description": "A quiet suburban co-working spot with reliable amenities and low rates.",
+    "amenities": [
+      "Strong Wi-Fi",
+      "Air-conditioning",
+      "Snack Bar",
+      "Comfortable Seating",
+      "Printing"
+    ],
+    "hours": "8:00 AM - 8:00 PM",
+    "time_slots": ["Morning Shift", "Afternoon Shift", "Evening Shift"]
+  },
+  {
+    "id": 11,
+    "name": "Pasig WorkPod",
+    "location": "Pasig City",
+    "price": 300,
+    "main_image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+    "images": [
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+    ],
+    "description": "Compact pods designed for individuals who prefer private workspaces.",
+    "amenities": [
+      "Soundproof Pods",
+      "Wi-Fi",
+      "Charging Stations",
+      "Ergonomic Seating",
+      "Free Coffee"
+    ],
+    "hours": "9:00 AM - 11:00 PM",
+    "time_slots": ["9am - 1pm", "1pm - 5pm", "5pm - 9pm"]
+  },
+  {
+    "id": 12,
+    "name": "Makati Hive",
+    "location": "Makati City",
+    "price": 550,
+    "main_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "images": [
+      "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
+      "https://images.unsplash.com/photo-1524646432689-9532c3bd9c72"
+    ],
+    "description": "A buzzing hub for startups and entrepreneurs in Makati’s business district.",
+    "amenities": [
+      "Startup Networking",
+      "High-speed Wi-Fi",
+      "Meeting Rooms",
+      "Free Beverages",
+      "24/7 Access"
+    ],
+    "hours": "Open 24/7",
+    "time_slots": ["Full Day Pass", "Night Shift Pass"]
+  },
+  {
+    "id": 13,
+    "name": "Quezon City Brainspace",
+    "location": "Quezon City",
+    "price": 270,
+    "main_image": "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    "images": [
+      "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0",
+      "https://images.unsplash.com/photo-1529676468690-787ec1f6dabb"
+    ],
+    "description": "An affordable and collaborative space for students and freelancers alike.",
+    "amenities": [
+      "Wi-Fi",
+      "Collaboration Rooms",
+      "Power Outlets",
+      "Café Access",
+      "Air-conditioning"
+    ],
+    "hours": "8:00 AM - 10:00 PM",
+    "time_slots": ["8am - 12pm", "12pm - 4pm", "4pm - 8pm"]
+  },
+  {
+    "id": 14,
+    "name": "Cagayan de Oro Work & Study Hub",
+    "location": "Cagayan de Oro",
+    "price": 240,
+    "main_image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+    "images": [
+      "https://images.unsplash.com/photo-1517502884422-41eaead166d4",
+      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61"
+    ],
+    "description": "A budget-friendly spot in CDO with group tables and free snacks.",
+    "amenities": [
+      "Free Snacks",
+      "Wi-Fi",
+      "Group Tables",
+      "Comfortable Chairs",
+      "Air-conditioning"
+    ],
+    "hours": "9:00 AM - 9:00 PM",
+    "time_slots": ["Morning", "Afternoon", "Evening"]
+  },
+  {
+    "id": 15,
+    "name": "Batangas Study Dock",
+    "location": "Batangas City",
+    "price": 230,
+    "main_image": "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
+    "images": [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+    ],
+    "description": "A peaceful dockside study space with fresh air and scenic views.",
+    "amenities": [
+      "Outdoor Seating",
+      "Wi-Fi",
+      "Coffee Bar",
+      "Charging Stations",
+      "Air-conditioning"
+    ],
+    "hours": "7:00 AM - 7:00 PM",
+    "time_slots": ["7am - 11am", "11am - 3pm", "3pm - 7pm"]
+  },
+  {
+    "id": 16,
+    "name": "Taguig Collab Lab",
+    "location": "Taguig City",
+    "price": 480,
+    "main_image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+    "images": [
+      "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    ],
+    "description": "An innovative co-working hub for creatives and tech professionals.",
+    "amenities": [
+      "Collaboration Rooms",
+      "Wi-Fi",
+      "Snack Bar",
+      "Air-conditioned",
+      "Event Hall"
+    ],
+    "hours": "9:00 AM - 11:00 PM",
+    "time_slots": ["9am - 1pm", "1pm - 5pm", "5pm - 9pm"]
+  },
+  {
+    "id": 17,
+    "name": "Quezon Avenue Study Hub",
+    "location": "Quezon Avenue, QC",
+    "price": 200,
+    "main_image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "images": [
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+    ],
+    "description": "A budget-friendly hub with a focus on solo work and minimal distractions.",
+    "amenities": [
+      "Wi-Fi",
+      "Study Cubicles",
+      "Printing Services",
+      "Air-conditioning",
+      "Free Coffee"
+    ],
+    "hours": "8:00 AM - 9:00 PM",
+    "time_slots": ["Morning", "Afternoon", "Evening"]
+  },
+  {
+    "id": 18,
+    "name": "Pampanga Study Spot",
+    "location": "San Fernando, Pampanga",
+    "price": 210,
+    "main_image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+    "images": [
+      "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0",
+      "https://images.unsplash.com/photo-1529676468690-787ec1f6dabb"
+    ],
+    "description": "A student-friendly workspace with affordable hourly rates and comfy seating.",
+    "amenities": [
+      "Wi-Fi",
+      "Affordable Snacks",
+      "Power Outlets",
+      "Quiet Environment",
+      "Air-conditioning"
+    ],
+    "hours": "7:00 AM - 9:00 PM",
+    "time_slots": ["7am - 11am", "11am - 3pm", "3pm - 7pm"]
   }
 ]

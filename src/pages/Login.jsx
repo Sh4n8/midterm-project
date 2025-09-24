@@ -18,7 +18,7 @@ export default function Login() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h2>Login (Simulated)</h2>
+      <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <input
           value={name}

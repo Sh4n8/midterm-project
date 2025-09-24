@@ -507,6 +507,23 @@ select {
   color: #2563eb;
 }
 
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: #2563eb;
+}
+
+
 /* Spaces Section */
 .spaces-section {
   padding: 80px 24px;

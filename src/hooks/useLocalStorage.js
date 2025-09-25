@@ -1,4 +1,3 @@
-// hooks/useLocalStorage.js
 import { useState, useEffect } from "react";
 
 // Custom hook: keeps a state value in sync with localStorage

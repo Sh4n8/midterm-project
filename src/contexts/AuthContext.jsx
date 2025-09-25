@@ -1,4 +1,3 @@
-// contexts/AuthContext.js
 import React, { createContext, useContext } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 

@@ -1,12 +1,15 @@
 import React from "react";
 
+// ConfirmationModal is a popup that asks the user to confirm or cancel an action
 export default function ConfirmationModal({
-  open,
-  onClose,
-  onConfirm,
-  message,
+  open,      // controls if the modal is visible
+  onClose,   // function that runs when Cancel is clicked
+  onConfirm, // function that runs when Confirm is clicked
+  message,   // text shown inside the modal
 }) {
+  // If modal is not open, return nothing
   if (!open) return null;
+
   return (
     <div
       style={{

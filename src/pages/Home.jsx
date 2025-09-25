@@ -4,13 +4,18 @@ import spacesData from "../data/spaces.json";
 import '../index.css';
 
 export default function Home() {
+  // Search query input
   const [query, setQuery] = useState("");
+  
+  // All spaces data (loaded from JSON)
   const [spaces, setSpaces] = useState([]);
 
+  // Load spaces data on first render
   useEffect(() => {
     setSpaces(spacesData);
   }, []);
 
+  // Filter spaces based on search query (name or location)
   const filtered = spaces.filter(
     (s) =>
       s.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -19,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      {/* Hero Section with Search */}
+      {/* ---------- Hero Section with Search ---------- */}
       <section className="hero-section">
         <div className="hero-overlay">
           <div className="hero-content">
@@ -28,6 +33,7 @@ export default function Home() {
               Discover amazing study spaces and coworking areas in your city
             </p>
 
+            {/* Search bar */}
             <div className="search-container">
               <div className="search-box">
                 <svg
@@ -68,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Available Spaces Section */}
+      {/* ---------- Available Spaces Section ---------- */}
       <section className="spaces-section">
         <div className="section-header">
           <h2 className="section-title">Available Spaces</h2>
@@ -76,9 +82,12 @@ export default function Home() {
         </div>
 
         <div className="spaces-grid">
+          {/* Render space cards */}
           {filtered.map((space) => (
             <SpaceCard key={space.id} space={space} />
           ))}
+
+          {/* Show message if no results */}
           {filtered.length === 0 && (
             <div className="no-results">
               <svg

@@ -26,6 +26,7 @@ export default function SpaceDetail() {
 
   if (!space) return <div className="not-found">Space not found.</div>;
 
+  // Handles booking submission
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
@@ -44,21 +45,24 @@ export default function SpaceDetail() {
     }
   }
 
-  // carousel controls
+  // Show next carousel image
   function nextImage() {
     setCurrentIndex((prev) => (prev + 1) % allImages.length);
   }
 
+  // Show previous carousel image
   function prevImage() {
     setCurrentIndex((prev) =>
       prev === 0 ? allImages.length - 1 : prev - 1
     );
   }
 
+  // Start touch position for swipe
   function handleTouchStart(e) {
     setTouchStart(e.touches[0].clientX);
   }
 
+  // Detect swipe direction and trigger carousel movement
   function handleTouchEnd(e) {
     const touchEnd = e.changedTouches[0].clientX;
     if (touchStart - touchEnd > 50) {

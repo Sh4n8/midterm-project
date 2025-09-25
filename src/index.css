@@ -809,3 +809,73 @@ select {
     align-self: flex-end;
   }
 }
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-btn.left {
+  left: 15px;
+}
+
+.carousel-btn.right {
+  right: 15px;
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangle.left {
+  border-width: 15px 20px 15px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.triangle.right {
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}

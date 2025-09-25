@@ -3,12 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
 export default function Header() {
+  // Get current user and logout function from AuthContext
   const { user, logout } = useAuth();
+
+  // useNavigate is used to redirect the user after logout
   const nav = useNavigate();
 
+  // Handles user logout
   function handleLogout() {
-    logout();
-    nav("/");
+    logout();    // clears user session
+    nav("/");    // redirects back to homepage
   }
 
   return (

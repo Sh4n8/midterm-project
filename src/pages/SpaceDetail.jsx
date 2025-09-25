@@ -17,8 +17,16 @@ export default function SpaceDetail() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(null);
 
+  // carousel images
+  const allImages = [space?.main_image, ...(space?.images || [])];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // swipe tracking
+  const [touchStart, setTouchStart] = useState(0);
+
   if (!space) return <div className="not-found">Space not found.</div>;
 
+  // Handles booking submission
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
@@ -37,43 +45,68 @@ export default function SpaceDetail() {
     }
   }
 
+  // Show next carousel image
+  function nextImage() {
+    setCurrentIndex((prev) => (prev + 1) % allImages.length);
+  }
+
+  // Show previous carousel image
+  function prevImage() {
+    setCurrentIndex((prev) =>
+      prev === 0 ? allImages.length - 1 : prev - 1
+    );
+  }
+
+  // Start touch position for swipe
+  function handleTouchStart(e) {
+    setTouchStart(e.touches[0].clientX);
+  }
+
+  // Detect swipe direction and trigger carousel movement
+  function handleTouchEnd(e) {
+    const touchEnd = e.changedTouches[0].clientX;
+    if (touchStart - touchEnd > 50) {
+      nextImage(); // swipe left
+    }
+    if (touchEnd - touchStart > 50) {
+      prevImage(); // swipe right
+    }
+  }
+
   return (
     <div className="space-detail-container">
       <div className="space-header">
         <h1 className="space-title">{space.name}</h1>
       </div>
 
-      <div className="image-gallery">
-        <div className="main-image">
-          <img
-            src={space.main_image || "/assets/placeholder.jpg"}
-            alt={space.name}
-            className="gallery-img main"
-          />
-        </div>
-        <div className="image-grid">
-          <img
-            src={space.main_image || "/assets/placeholder.jpg"}
-            alt={space.name}
-            className="gallery-img grid"
-          />
-          <img
-            src={space.main_image || "/assets/placeholder.jpg"}
-            alt={space.name}
-            className="gallery-img grid"
-          />
-          <img
-            src={space.main_image || "/assets/placeholder.jpg"}
-            alt={space.name}
-            className="gallery-img grid"
-          />
-          <div className="gallery-img grid show-all">
-            <img
-              src={space.main_image || "/assets/placeholder.jpg"}
-              alt={space.name}
-              className="gallery-img grid"
+      {/* Swipeable Image Carousel */}
+      <div
+        className="carousel-container"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <button className="carousel-btn left" onClick={prevImage}>
+          <span className="triangle left"></span>
+        </button>
+
+        <img
+          src={allImages[currentIndex] || "/assets/placeholder.jpg"}
+          alt={`${space.name} ${currentIndex + 1}`}
+          className="carousel-img"
+        />
+
+        <button className="carousel-btn right" onClick={nextImage}>
+          <span className="triangle right"></span>
+        </button>
+
+        <div className="carousel-dots">
+          {allImages.map((_, idx) => (
+            <span
+              key={idx}
+              className={`dot ${idx === currentIndex ? "active" : ""}`}
+              onClick={() => setCurrentIndex(idx)}
             />
-          </div>
+          ))}
         </div>
       </div>
 

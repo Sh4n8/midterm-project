@@ -25,9 +25,9 @@
     "name": "WorkHaven Makati",
     "location": "Makati City",
     "price": 500,
-    "main_image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "main_image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde51",
     "images": [
-      "https://images.unsplash.com/photo-1551836022-4c4c79ecde51",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
       "https://images.unsplash.com/photo-1521791136064-7986c2920216"
     ],
     "description": "A professional co-working environment in the heart of the business district. Ideal for meetings, collaborations, and networking.",
@@ -49,7 +49,7 @@
     "main_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     "images": [
       "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
-      "https://images.unsplash.com/photo-1524646432689-9532c3bd9c72"
+      "https://images.unsplash.com/photo-1531058020387-3be344556be6"
     ],
     "description": "A vibrant and artistic space designed to foster creativity and collaboration among Cebu's digital nomads and artists.",
     "amenities": [
@@ -64,27 +64,6 @@
   },
   {
     "id": 4,
-    "name": "Manila Minds Cafe",
-    "location": "Manila City",
-    "price": 280,
-    "main_image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-    "images": [
-      "https://images.unsplash.com/photo-1529676468690-787ec1f6dabb",
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
-    ],
-    "description": "A cozy cafe-style workspace where students and freelancers can enjoy unlimited coffee while working.",
-    "amenities": [
-      "Unlimited Coffee",
-      "Fast Wi-Fi",
-      "Charging Stations",
-      "Snack Bar",
-      "Air-conditioning"
-    ],
-    "hours": "8:00 AM - 10:00 PM",
-    "time_slots": ["8am - 12pm", "12pm - 4pm", "4pm - 8pm"]
-  },
-  {
-    "id": 5,
     "name": "Davao Work Loft",
     "location": "Davao City",
     "price": 350,
@@ -102,17 +81,21 @@
       "Pantry Access"
     ],
     "hours": "7:00 AM - 11:00 PM",
-    "time_slots": ["Morning (7am-11am)", "Afternoon (11am-3pm)", "Evening (3pm-7pm)"]
+    "time_slots": [
+      "Morning (7am-11am)",
+      "Afternoon (11am-3pm)",
+      "Evening (3pm-7pm)"
+    ]
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Baguio Study Lodge",
     "location": "Baguio City",
     "price": 200,
     "main_image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0",
     "images": [
-      "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634",
-      "https://images.unsplash.com/photo-1504386106331-3e4e71712b38"
+      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
     ],
     "description": "Nestled in the cool climate of Baguio, this lodge offers a serene environment perfect for studying.",
     "amenities": [
@@ -126,7 +109,7 @@
     "time_slots": ["Morning Pass", "Afternoon Pass", "Full Day Pass"]
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Iloilo ThinkTank",
     "location": "Iloilo City",
     "price": 320,
@@ -144,38 +127,21 @@
       "Free Coffee"
     ],
     "hours": "8:00 AM - 9:00 PM",
-    "time_slots": ["Morning (8am-12pm)", "Afternoon (12pm-4pm)", "Evening (4pm-9pm)"]
+    "time_slots": [
+      "Morning (8am-12pm)",
+      "Afternoon (12pm-4pm)",
+      "Evening (4pm-9pm)"
+    ]
   },
   {
-    "id": 8,
-    "name": "Ortigas Work Lounge",
-    "location": "Ortigas Center",
-    "price": 400,
-    "main_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    "images": [
-      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
-      "https://images.unsplash.com/photo-1504386106331-3e4e71712b38"
-    ],
-    "description": "Strategically located in Ortigas, this lounge offers a premium workspace for professionals.",
-    "amenities": [
-      "Meeting Rooms",
-      "24/7 Access",
-      "Strong Wi-Fi",
-      "Pantry & Snacks",
-      "Air-conditioning"
-    ],
-    "hours": "Open 24/7",
-    "time_slots": ["Day Pass", "Night Pass", "Full Day Access"]
-  },
-  {
-    "id": 9,
+    "id": 7,
     "name": "Laguna Learning Hub",
     "location": "Santa Rosa, Laguna",
     "price": 220,
-    "main_image": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+    "main_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     "images": [
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475"
+      "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
     ],
     "description": "An affordable student-friendly hub with long tables and group study rooms.",
     "amenities": [
@@ -189,14 +155,14 @@
     "time_slots": ["7am - 11am", "11am - 3pm", "3pm - 7pm"]
   },
   {
-    "id": 10,
+    "id": 8,
     "name": "Cavite Focus Space",
     "location": "Dasmariñas, Cavite",
     "price": 260,
     "main_image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
     "images": [
-      "https://images.unsplash.com/photo-1522205408450-add114ad53fe",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
     ],
     "description": "A quiet suburban co-working spot with reliable amenities and low rates.",
     "amenities": [
@@ -210,14 +176,14 @@
     "time_slots": ["Morning Shift", "Afternoon Shift", "Evening Shift"]
   },
   {
-    "id": 11,
+    "id": 9,
     "name": "Pasig WorkPod",
     "location": "Pasig City",
     "price": 300,
     "main_image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
     "images": [
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+      "https://images.unsplash.com/photo-1529101091764-c3526daf38fe",
+      "https://images.unsplash.com/photo-1522205408450-add114ad53fe"
     ],
     "description": "Compact pods designed for individuals who prefer private workspaces.",
     "amenities": [
@@ -231,14 +197,14 @@
     "time_slots": ["9am - 1pm", "1pm - 5pm", "5pm - 9pm"]
   },
   {
-    "id": 12,
+    "id": 10,
     "name": "Makati Hive",
     "location": "Makati City",
     "price": 550,
-    "main_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "main_image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
     "images": [
-      "https://images.unsplash.com/photo-1497493292307-31c376b6e479",
-      "https://images.unsplash.com/photo-1524646432689-9532c3bd9c72"
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
     ],
     "description": "A buzzing hub for startups and entrepreneurs in Makati’s business district.",
     "amenities": [

@@ -17,8 +17,12 @@ export default function SpaceDetail() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(null);
 
-  // carousel images
-  const allImages = [space?.main_image, ...(space?.images || [])];
+  // Safe image array
+  const allImages =
+    space && (space.main_image || space.images?.length)
+      ? [space.main_image, ...(space.images || [])].filter(Boolean)
+      : ["/assets/placeholder.jpg"];
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // swipe tracking
@@ -47,11 +51,13 @@ export default function SpaceDetail() {
 
   // Show next carousel image
   function nextImage() {
+    if (allImages.length === 0) return;
     setCurrentIndex((prev) => (prev + 1) % allImages.length);
   }
 
   // Show previous carousel image
   function prevImage() {
+    if (allImages.length === 0) return;
     setCurrentIndex((prev) =>
       prev === 0 ? allImages.length - 1 : prev - 1
     );
@@ -85,9 +91,11 @@ export default function SpaceDetail() {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <button className="carousel-btn left" onClick={prevImage}>
-          <span className="triangle left"></span>
-        </button>
+        {allImages.length > 1 && (
+          <button className="carousel-btn left" onClick={prevImage}>
+            <span className="triangle left"></span>
+          </button>
+        )}
 
         <img
           src={allImages[currentIndex] || "/assets/placeholder.jpg"}
@@ -95,19 +103,23 @@ export default function SpaceDetail() {
           className="carousel-img"
         />
 
-        <button className="carousel-btn right" onClick={nextImage}>
-          <span className="triangle right"></span>
-        </button>
+        {allImages.length > 1 && (
+          <button className="carousel-btn right" onClick={nextImage}>
+            <span className="triangle right"></span>
+          </button>
+        )}
 
-        <div className="carousel-dots">
-          {allImages.map((_, idx) => (
-            <span
-              key={idx}
-              className={`dot ${idx === currentIndex ? "active" : ""}`}
-              onClick={() => setCurrentIndex(idx)}
-            />
-          ))}
-        </div>
+        {allImages.length > 1 && (
+          <div className="carousel-dots">
+            {allImages.map((_, idx) => (
+              <span
+                key={idx}
+                className={`dot ${idx === currentIndex ? "active" : ""}`}
+                onClick={() => setCurrentIndex(idx)}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="content-layout">

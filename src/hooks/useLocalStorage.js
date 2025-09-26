@@ -22,6 +22,6 @@ export default function useLocalStorage(key, initialValue) {
     }
   }, [key, state]);
 
-  // Return state and function to update it (like useState)
+  // Return state and function to update it (useState)
   return [state, setState];
 }
